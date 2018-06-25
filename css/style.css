@@ -1,0 +1,436 @@
+﻿@charset "utf-8";
+
+*, html, body{
+	margin: 0;
+	padding: 0;
+	font-family:  arial;
+	color: #000;
+	outline: none;
+}
+.container-top, .container-bottom{
+	width: 100%;
+	height: auto;
+}
+header{
+	width: 942px;
+	height: 461px;
+	margin: 0 auto;
+	position: relative;
+	overflow: hidden;
+}
+.container-menu{
+	width: 232px;
+	height: auto;
+	background-color: #ec0606;
+	display: flex;
+	position: absolute;
+}
+.logo{
+	width: 106px;
+	height: auto;
+	text-align: center;
+	padding-top: 18px;
+}
+.logo h1 a{
+	font-family: Niagara Solid;
+	font-size: 48px;
+	text-transform: uppercase;
+	color: #fff;
+	text-decoration: none;
+}
+.container-menu nav{
+	padding: 24px 0 24px 25px;
+}
+.container-menu nav ul{
+	list-style: none;
+}
+.container-menu nav ul li{
+	padding-bottom: 15px;
+}
+.container-menu nav ul li:last-child{
+	padding-bottom: 0;
+}
+.container-menu nav ul li a{
+	font-family: 'Dosis', sans-serif;
+	font-size: 16px;
+	color: #fff;
+	text-transform: uppercase;
+	text-decoration: none;
+	-webkit-transition: color .5s ease;
+	-moz-transition: color .5s ease;
+	-o-transition: color .5s ease;
+	-ms-transition: color .5s ease;
+	transition: color .5s ease;
+}
+.container-menu nav ul li a:hover{
+	color: #000;
+}
+.container-slider-buttons{
+	width: 110px;
+	height: 50px;
+	position: absolute;
+	top: 20px;
+	right: 43px;
+	display: flex;
+}
+#btn-slide-left, #btn-slide-right{
+	font-family: DFGothic-EB;
+	font-size: 24px;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background-color: #fff;
+	border: none;
+	opacity: .6;
+	margin-left: 5px;
+	cursor: pointer;
+	-webkit-transition: .8s ease;
+	-moz-transition: .8s ease;
+	-o-transition: .8s ease;
+	-ms-transition: .8s ease;
+	transition: .8s ease;
+}
+#btn-slide-left:hover, #btn-slide-right:hover{
+	color: #fff;
+	background-color: #ec0606;
+	opacity: 1; 
+}
+.container-content{
+	width: 942px;
+	height: auto;
+	margin: 0 auto;
+}
+.container-themes, .container-services, .container-clients, .container-about{
+	width: 100%;
+	height: auto;
+	padding-top: 50px;
+}
+.container-services{
+	text-align: right;
+}
+.container-themes h2, .container-services h2, .container-clients h2, .container-about h2, .theme-inner h3{
+	font-family: 'Dosis', sans-serif;
+	font-size: 36px;
+	text-transform: uppercase;
+	text-align: left;
+}
+.container-themes h2, .container-services h2, .container-clients h2, .container-about h2{
+	color: #000;
+	padding-bottom: 30px;
+}
+.container-themes-inner{
+	width: 100%;
+	height: auto;
+	display: flex;
+}
+.container-theme{
+	width: 294px;
+	height: 294px;
+	
+	border-radius: 50%;
+	overflow: hidden;
+	text-align: left;
+	position: relative;
+	margin: 0 auto;
+	
+}
+.container-theme img{
+	position: absolute;
+	right: -120px;
+}
+.theme-inner{
+	width: 266px;
+	height: 266px;
+	border-radius: 50%;
+	border: 14px solid rgba(255,255,255,.2);
+	background-color: rgba(0,0,0,.5);
+	position: relative;
+	-webkit-transition: border 1s ease;
+	-moz-transition: border 1s ease;
+	-o-transition: border 1s ease;
+	-ms-transition: border 1s ease;
+	transition: border 1s ease;
+}
+.theme-inner:hover{
+	border: 14px solid rgba(255,255,255,.6);
+}
+.theme-inner h3{
+	width: 231px;
+	height: 92px;
+	display: block;
+	border-bottom: 1px solid #fff;
+	padding: 52px 0 39px 0;
+	text-align: center;
+	margin: 0 auto; 
+}
+.theme-inner h3{
+	color: #fff;	
+}
+.theme-inner p, .theme-inner p a{
+	font-size: 12px;
+	color: #fff;
+	text-align: center;
+	padding-top: 15px;
+}
+#more{
+	color: #d1cfcf;
+	text-decoration: none;
+}
+.theme-inner p a{
+	text-decoration: none;
+}
+.container-service a:hover, .theme-inner p a:hover, #more:hover, #more a:hover{
+	text-decoration: underline;
+}
+.container-service{
+	width: 198px;
+	height: 282px;
+	background-color: #fdfdfd;
+	border: 1px solid #fbfbfb;
+	padding: 22px 12px 25px 12px; 
+	margin: 0 auto;
+	-webkit-transition: .5s ease;
+	-moz-transition: .5s ease;
+	-o-transition: .5s ease;
+	-ms-transition: .5s ease;
+	transition: .5s ease;
+}
+.container-service:hover{
+	background-color: #eeeeee;
+	border: 1px solid #bfbdbd;
+}
+.container-service h3{
+	font-family: 'Dosis', sans-serif;
+	font-size: 24px;
+	color: #233c4c;
+	text-transform: uppercase;
+	text-align: center;
+	padding-bottom: 22px;
+}
+#subtitle{
+	font-family: 'Dosis', sans-serif;
+	font-size: 18px;
+	color: #5d6f7b;
+	line-height: 1.2em;
+	text-align: left;
+	padding-bottom: 28px;
+}
+.container-service p{
+	font-size: 13px;
+	color: #565252;
+	line-height: 1.4em;
+	text-align: left;
+	padding-bottom: 35px;
+}
+.container-service a{
+	font-family: 'Dosis', sans-serif;
+	font-size: 14px;
+	color: #ec0606;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+.container-service a:after, .signature p a:after{
+	content: "";
+	width: 13px;
+	height: 9px;
+	background: url(../images/arrow-right.png) no-repeat;
+	display: inline-block;
+	margin-left: 5px;
+}
+.container-services-inner{
+	width: 100%;
+	height: auto;
+	display: flex;
+}
+.container-clients-inner{
+	display: flex;
+	position: relative;
+}
+.container-clients-inner a{
+	opacity: 1;
+	margin: 0 auto;
+	-webkit-transition: .5s ease;
+	-moz-transition: .5s ease;
+	-o-transition: .5s ease;
+	-ms-transition: .5s ease;
+	transition: .5s ease;
+
+}
+.container-clients-inner a:hover{
+	opacity: .6;
+}
+.container-about-inner{
+	width: 100%;
+	height: auto;
+	background-color: #fdfdfd;
+	border: 1px solid #fbfbfb;
+	display: inline-block;
+	padding: 25px 0;
+	position: relative;
+	-webkit-transition: .5s ease;
+	-moz-transition: .5s ease;
+	-o-transition: .5s ease;
+	-ms-transition: .5s ease;
+	transition: .5s ease;
+}
+.photo{
+	width: 124px;
+	height: 124px;
+	border-radius: 50%;
+	overflow: hidden;
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0 10px 0 25px;
+}
+.container-info{
+	width: 760px;
+	height: auto;
+	display: inline-block;
+	vertical-align: middle;
+}
+.container-info p{
+	font-size: 14px;
+	line-height: 1.5em;
+	margin-bottom: 23px; 
+}
+.container-info p:first-child:before, .container-info p:last-child:after{
+	content: "\“";
+	font-size: 60px;
+	font-style: italic;
+	display: inline-block;
+	vertical-align: middle;
+}
+.container-info p:first-child:before{
+	margin-right: 10px;
+
+}
+.container-info p:last-child:after{
+	-webkit-transform: rotate(180deg);
+	-moz-transform: rotate(180deg);
+	-o-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	transform: rotate(180deg);
+	margin-left: 10px;
+}
+.container-info p a{
+	color: #ec0606;
+	text-decoration: none;
+}
+.container-info p a:hover{
+	text-decoration: underline;
+}
+#note{
+	color: #265b7e;
+}
+.signature{
+	width: 780px;
+	height: auto;
+	position: absolute;
+	right: 0;
+}
+.signature p, .signature a{
+	font-family: 'Dosis', sans-serif;
+	font-size: 14px;
+}
+.signature p{
+	color: #265b7e;
+
+}
+#more{
+	text-align: right;
+}
+.signature p a{
+	width: 100px;
+	color: #ec0606;
+	text-transform: uppercase;
+	text-decoration: none;
+	position: absolute;
+	right: 10px;
+	bottom: 0px;
+}
+footer{
+	width: 942px;
+	height: auto;
+	margin: 0 auto;
+	position: relative;
+	padding-top: 73px;
+	position: relative;
+}
+.container-contacts{
+	width: 696px;
+	line-height: auto;
+	padding: 96px 0 0 16px;
+	position: absolute;
+	right: 0;
+}
+.container-contacts p{
+	font-size: 12px;
+	color: #565252;
+	text-transform: uppercase;
+}
+.container-contacts nav{
+	position: absolute;
+	top: 96px;
+	right: 0;
+}
+.container-contacts nav ul{
+	list-style: none;
+}
+.container-contacts nav ul li{
+	float: left;
+}
+.container-contacts nav ul li a{
+	width: 37px;
+	height: 37px;
+	background: url(../images/sprite-social.png) no-repeat;
+	display: block;
+	margin-left: 5px;
+	transition: ease 1s;
+}
+#tw{
+	background-position: 0 0;
+}
+#gp{
+	background-position: -43px 0;
+}
+#pp{
+	background-position: -84px 0;
+}
+#fb{
+	background-position: -127px 0;
+}
+.container-contacts nav ul li a:hover{
+	-webkit-transform: rotate(720deg);
+	-moz-transform: rotate(720deg);
+	-o-transform: rotate(720deg);
+	-ms-transform: rotate(720deg);
+	transform: rotate(720deg);
+	opacity: .6;
+}
+.btn-upper{
+	width: 48px;
+	height: 43px;
+	background-color: #ec0606;
+	border-radius: 50%;
+	opacity: .3;
+	position: fixed;
+	bottom: 50px;
+	right: 50px;
+	padding-top: 5px;
+	cursor: pointer;
+	-webkit-transition: opacity .5s ease;
+	-moz-transition: opacity .5s ease;
+	-o-transition: opacity .5s ease;
+	-ms-transition: opacity .5s ease;
+	transition: opacity .5s ease;
+}
+.btn-upper:hover{
+	opacity: 1;
+}
+.btn-upper p{
+	font-size: 14px;
+	font-weight: bold;
+	color: #fff;
+	text-transform: uppercase;
+	text-align: center;
+}
